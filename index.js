@@ -53,3 +53,11 @@ function celsiusToFahrenheit(celsiusTemperature) {
 }
 
 celsiusToFahrenheit(30)
+
+function fahrenheitToCelsius(fahrenheitTemperature) {
+    // Deduct 32, then multiply by 5, then divide by 9
+    let celsiusTemperature = (fahrenheitTemperature - 32) * 5 / 9;
+    console.log(fahrenheitTemperature, '°F is', celsiusTemperature, '°C ',);
+}
+
+fahrenheitToCelsius(86)
