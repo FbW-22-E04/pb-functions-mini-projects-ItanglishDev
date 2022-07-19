@@ -44,3 +44,12 @@ calcArea(3)
 
 
 // The Temperature Converter
+
+
+function celsiusToFahrenheit(celsiusTemperature) {
+    // Divide by 5, then multiply by 9, then add 32
+    let farhenHeitTemperature = celsiusTemperature / 5 * 9 + 32
+    console.log(celsiusTemperature, '°C is', farhenHeitTemperature, '°F');
+}
+
+celsiusToFahrenheit(30)
