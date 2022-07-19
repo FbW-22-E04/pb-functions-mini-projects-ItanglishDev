@@ -20,12 +20,12 @@ puppyAgeCalculator(5)
 function calculateSupply(age, amountPerDay) {
     const maxAge = 75;
     let yearsLeft = maxAge - age;
-    const restOfLife = yearsLeft * 365.25 * amountPerDay;
+    const restOfLife = Math.ceil(yearsLeft * 365.25 * amountPerDay);
     console.log('You will need', restOfLife, 'to last you until the ripe age of', maxAge);
 
 }
 
-calculateSupply(35, 2)
+calculateSupply(35, 1.2)
 
 
 // The Geometrizer
